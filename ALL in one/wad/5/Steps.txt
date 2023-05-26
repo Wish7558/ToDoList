@@ -1,0 +1,14 @@
+(Console ke andar type karo)
+
+mkdir filename
+cd filename
+npm init
+npm install express
+touch a.js
+
+(a.js ke andar code daalne ke baad type karo)
+
+node a.js
+
+(aur website pe jaake jo code ke andar number daala ho vo daal do
+close karne ho to control+C dabao)

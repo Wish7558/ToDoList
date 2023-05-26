@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    h1 {
+      text-align: center;
+    }
+    
+    .form-group {
+      margin-bottom: 20px;
+    }
+    
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    
+    .form-group textarea {
+      resize: vertical;
+    }
+    
+    .submit-button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    .submit-button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>User Registration Form</h1>
+    
+    <form>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <select id="country-code" name="country-code">
+          <option value="+91">+91 (India)</option>
+          
+        </select>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" maxlength="10" required>
+      </div>
+      
+      <div class="form-group">
+        <label>Sex:</label>
+        <label><input type="radio" name="sex" value="male"> Male</label>
+        <label><input type="radio" name="sex" value="female"> Female</label>
+        <label><input type="radio" name="sex" value="other"> Other</label>
+      </div>
+      
+      <div class="form-group">
+        <label for="dob">Date of Birth:</label>
+        <select id="dob-day" name="dob-day">
+          <option value="">1</option>
+          <option value="">2</option>
+          <option value="">3</option>
+          <option value="">4</option>
+          <option value="">5</option>
+          <option value="">6</option>
+          <option value="">7</option>
+          <option value="">8</option>
+          <option value="">9</option>
+          <option value="">10</option>
+          <option value="">11</option>
+          <option value="">12</option>
+          <option value="">13</option>
+          <option value="">14</option>
+          <option value="">15</option>
+          <option value="">16</option>
+          <option value="">17</option>
+          <option value="">18</option>
+          <option value="">19</option>
+          <option value="">20</option>
+          <option value="">21</option>
+          <option value="">22</option>
+          <option value="">23</option>
+          <option value="">24</option>
+          <option value="">25</option>
+          <option value="">26</option>
+          <option value="">27</option>
+          <option value="">28</option>
+          <option value="">29</option>
+          <option value="">30</option>
+          <option value="">31</option>
+
+        </select>
+        <select id="dob-month" name="dob-month">
+          <option value="">JAN</option>
+          <option value="">FEB</option>
+          <option value="">MAR</option>
+          <option value="">APR</option>
+          <option value="">MAY</option>
+          <option value="">JUN</option>
+          <option value="">JUL</option>
+          <option value="">AUG</option>
+          <option value="">SEP</option>
+          <option value="">OCT</option>
+          <option value="">NOV</option>
+          <option value="">DEC</option>
+        </select>
+        <select id="dob-year" name="dob-year">
+          <option value="">2002</option>
+          <option value="">2003</option>
+          <option value="">2004</option>
+          <option value="">2005</option>
+          <option value="">2006</option>
+          <option value="">2007</option>
+          <option value="">2008</option>
+          <option value="">2009</option>
+          <option value="">2010</option>
+          <option value="">2011</option>
+          <option value="">2012</option>
+          <option value="">2013</option>
+          <option value="">2014</option>
+          <option value="">2015</option>
+          <option value="">2016</option>
+          <option value="">2017</option>
+          <option value="">2018</option>
+          <option value="">2019</option>
+          
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label>Languages known:</label>
+        <label><input type="checkbox" name="language" value="english"> English</label>
+        <label><input type="checkbox" name="language" value="marathi"> Marathi</label>
+        <label><input type="checkbox" name="language" value="hindi"> Hindi</label>
+        <label><input type="checkbox" name="language" value="tamil"> Tamil</label>
+      </div>
+      
+      <div class="form-group">
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="5" required></textarea>
+      </div>
+      
+      <button type="submit" class="submit-button">Register</button>
+    </form>
+  </div>
+</body>
+</html>
